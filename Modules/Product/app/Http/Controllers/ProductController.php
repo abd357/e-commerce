@@ -71,7 +71,6 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {   
-        // dd($product);
         $id = $product->id;
         $product = Product::where('id', $id)->get();
         return view('product::show', compact('id', 'product'));

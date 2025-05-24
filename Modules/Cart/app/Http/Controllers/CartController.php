@@ -26,8 +26,6 @@ class CartController extends Controller
     {
         $product = Product::find($request->product_id);
         $cart = $request->session()->get('cart', []);
-        // dd($cart);
-        // collect($cart)->sum('total');
         
         if (isset($cart[$product->id])) {
             

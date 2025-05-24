@@ -1,0 +1,7 @@
+{
+    "Product": true,
+    "Permission": true,
+    "Role": true,
+    "Order": true,
+    "Cart": true
+}
